@@ -69,6 +69,22 @@ X_train.shape, Y_train.shape, X_test.shape
 
 ```
 
+## LR
+
+## SVM
+
+## KNN
+
+## GNB
+
+## SVC
+
+## Stochastic Gradient Descent 
+
+## Decision Trees
+
+## Random Forest
+
 
 
 
