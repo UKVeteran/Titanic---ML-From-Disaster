@@ -39,6 +39,47 @@ The goal is to create a predictive model that accurately determines whether a gi
 
 # 5️⃣ Pipelining
 
+## Setting The Stage
+
+### Numerical Pipe
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import RobustScaler
+numerical_pipe = Pipeline([
+ ('imputer',SimpleImputer(strategy='mean')),
+ ('scaler', RobustScaler())
+])
+numerical_pipe
+```
+
+### Categorical Pipe
+```python
+from sklearn.preprocessing import OneHotEncoder
+cat_pipe = Pipeline([
+ ('imputer',SimpleImputer(strategy='most_frequent')),
+ ('encoder', OneHotEncoder(sparse=False,
+ drop='if_binary',
+ handle_unknown = 'ignore'))
+])
+cat_pipe
+```
+
+### Transformers
+
+```python
+from sklearn.compose import ColumnTransformer
+from sklearn.compose import make_column_selector
+num_selector = make_column_selector(dtype_include=['float','int'])
+cat_selector = make_column_selector(dtype_include=['object'])
+preprocessing_pipe = ColumnTransformer([
+ ('numerical', numerical_pipe, num_selector),
+ ('categorical', cat_pipe, cat_selector)
+])
+preprocessing_pipe
+```
+
+
 ## SVC
 ```python
 
@@ -52,5 +93,16 @@ model_pipe
 ![SVC_pipeline](https://github.com/user-attachments/assets/c1c4062b-7765-434f-86c2-78ef114faa5e)
 
 ## LR
+
+```python
+
+model_pipe1 = Pipeline([
+ ('preprocessing', preprocessing_pipe),
+ ('model', LogisticRegression())
+])
+model_pipe1
+
+```
+
 ![LR_pipeline](https://github.com/user-attachments/assets/7979f5c9-e086-4d7e-bd49-adc603beb682)
 
