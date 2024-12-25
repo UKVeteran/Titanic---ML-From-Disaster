@@ -40,6 +40,15 @@ The goal is to create a predictive model that accurately determines whether a gi
 # 5️⃣ Pipelining
 
 ## SVC
+```python
+
+model_pipe = Pipeline([
+ ('preprocessing', preprocessing_pipe),
+ ('model', SVC())
+])
+model_pipe
+
+```
 ![SVC_pipeline](https://github.com/user-attachments/assets/c1c4062b-7765-434f-86c2-78ef114faa5e)
 
 ## LR
