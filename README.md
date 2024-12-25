@@ -29,3 +29,7 @@ The goal is to create a predictive model that accurately determines whether a gi
 ![Embarked](https://github.com/user-attachments/assets/81726e4e-b244-4485-9548-d4e9d64f0175)
 ![SibSp](https://github.com/user-attachments/assets/0af088f7-b83d-44c8-8a21-7cf264dce634)
 ![Parch](https://github.com/user-attachments/assets/f196ddc9-f46d-4b03-8270-8d2341c35b02)
+
+## The Heatmap
+![Heatmap](https://github.com/user-attachments/assets/a0d2efed-1768-42d5-9ce6-ff68dd6ccd3d)
+
