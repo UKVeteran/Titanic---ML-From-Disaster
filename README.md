@@ -19,4 +19,6 @@ The test set should be used to see how well your model performs on unseen data. 
 
 # 2️⃣ The Task
 
+The goal is to create a predictive model that accurately determines whether a given passenger would survive the Titanic disaster based on these attributes.
+
 # 3️⃣ Data Vizualization
