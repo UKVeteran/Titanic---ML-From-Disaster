@@ -39,3 +39,9 @@ The goal is to create a predictive model that accurately determines whether a gi
 
 # 5️⃣ Pipelining
 
+## SVC
+![SVC_pipeline](https://github.com/user-attachments/assets/c1c4062b-7765-434f-86c2-78ef114faa5e)
+
+## LR
+![LR_pipeline](https://github.com/user-attachments/assets/7979f5c9-e086-4d7e-bd49-adc603beb682)
+
