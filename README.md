@@ -58,10 +58,16 @@ from sklearn.tree import DecisionTreeClassifier
 
 ```
 
+Splitting the dataset into Training and Testing 
 
 
+```python
+X_train = train_df.drop("Survived", axis=1)
+Y_train = train_df["Survived"]
+X_test  = test_df.drop("PassengerId", axis=1).copy()
+X_train.shape, Y_train.shape, X_test.shape
 
-
+```
 
 
 
