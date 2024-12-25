@@ -33,3 +33,9 @@ The goal is to create a predictive model that accurately determines whether a gi
 ## The Heatmap
 ![Heatmap](https://github.com/user-attachments/assets/a0d2efed-1768-42d5-9ce6-ff68dd6ccd3d)
 
+
+# 4️⃣ ML Models
+
+
+# 5️⃣ Pipelining
+
