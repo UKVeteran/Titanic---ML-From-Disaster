@@ -71,21 +71,83 @@ X_train.shape, Y_train.shape, X_test.shape
 
 ## LR
 
+```python
+logreg = LogisticRegression()
+logreg.fit(X_train, Y_train)
+Y_pred = logreg.predict(X_test)
+acc_log = round(logreg.score(X_train, Y_train) * 100, 2)
+acc_log
+```
+
 ## SVM
+
+```python
+svc = SVC()
+svc.fit(X_train, Y_train)
+Y_pred = svc.predict(X_test)
+acc_svc = round(svc.score(X_train, Y_train) * 100, 2)
+acc_svc
+```
 
 ## KNN
 
+```python
+knn = KNeighborsClassifier(n_neighbors = 3)
+knn.fit(X_train, Y_train)
+Y_pred = knn.predict(X_test)
+acc_knn = round(knn.score(X_train, Y_train) * 100, 2)
+acc_knn
+```
 ## GNB
+
+```python
+gaussian = GaussianNB()
+gaussian.fit(X_train, Y_train)
+Y_pred = gaussian.predict(X_test)
+acc_gaussian = round(gaussian.score(X_train, Y_train) * 100, 2)
+acc_gaussian
+```
 
 ## SVC
 
+```python
+linear_svc = LinearSVC()
+linear_svc.fit(X_train, Y_train)
+Y_pred = linear_svc.predict(X_test)
+acc_linear_svc = round(linear_svc.score(X_train, Y_train) * 100, 2)
+acc_linear_svc
+```
+
 ## Stochastic Gradient Descent 
+
+```python
+sgd = SGDClassifier()
+sgd.fit(X_train, Y_train)
+Y_pred = sgd.predict(X_test)
+acc_sgd = round(sgd.score(X_train, Y_train) * 100, 2)
+acc_sgd
+```
 
 ## Decision Trees
 
+```python
+decision_tree = DecisionTreeClassifier()
+decision_tree.fit(X_train, Y_train)
+Y_pred = decision_tree.predict(X_test)
+acc_decision_tree = round(decision_tree.score(X_train, Y_train) * 100, 2)
+acc_decision_tree
+```
+
 ## Random Forest
 
-
+```python
+random_forest = RandomForestClassifier(n_estimators=100)
+random_forest.fit(X_train, Y_train)
+Y_pred = random_forest.predict(X_test)
+random_forest.score(X_train, Y_train)
+acc_random_forest = round(random_forest.score(X_train, Y_train) * 100, 2)
+acc_random_forest
+```
 
 
 # 5️⃣ Pipelining
